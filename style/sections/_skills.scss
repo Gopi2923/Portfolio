@@ -1,0 +1,39 @@
+ #skills {
+    color: $white-color;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    padding: 140px 0;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    @include responsive(phone) {
+      clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    }
+    &-section-text {
+        font-weight: bold;
+        margin-bottom: 1.8rem;
+        font-size: $mid-font-size;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+
+  .skills {
+    &__container {
+      @include container;
+    }
+    &__text {
+      @include section-title;
+    }
+    &__text {
+      text-transform: capitalize;
+      font-family: Mont-title, sans-serif;
+    }
+    &__icon-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+  }
+  
+  
+}
